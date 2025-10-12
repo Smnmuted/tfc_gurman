@@ -2,6 +2,7 @@
 # TFC Gurman 
 
 <p align="center">
+  <img src="https://img.shields.io/badge/Minecraft-1.20.1-brightgreen.svg](https://media.forgecdn.net/avatars/1477/55/638958842662366205.png"/>
   <img src="https://img.shields.io/badge/Minecraft-1.20.1-brightgreen.svg" alt="Minecraft 1.20.1"/>
   <img src="https://img.shields.io/badge/Forge-47.4.0-orange.svg" alt="Forge 47.4.0"/>
   <img src="https://img.shields.io/badge/Version-1.0.0-blue.svg" alt="Version 1.0.0"/>
