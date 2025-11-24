@@ -259,7 +259,7 @@ ServerEvents.recipes(event => {
 	event.recipes.gtceu.food_processor('borscht')
 		.circuit(20)
 		.itemInputs('tfc:food/beet', 'tfc:food/cabbage', 'tfc:food/carrot', 'tfc:food/onion', 'tfc:food/tomato')
-		.itemOutputs('tfc_gurman:borscht')
+		.itemOutputs('3x tfc_gurman:borscht')
 		.inputFluids(Fluid.of('minecraft:water', 1000))
 		.duration(1800)
 		.EUt(8)
@@ -273,7 +273,7 @@ ServerEvents.recipes(event => {
 	event.recipes.gtceu.food_processor('schi')
 		.circuit(20)
 		.itemInputs('tfc:food/cabbage', 'tfc:food/cabbage', 'tfc:food/carrot', 'tfc:food/onion', 'tfc:food/tomato')
-		.itemOutputs('tfc_gurman:schi')
+		.itemOutputs('3x tfc_gurman:schi')
 		.inputFluids(Fluid.of('minecraft:water', 1000))
 		.duration(1800)
 		.EUt(8)
@@ -304,7 +304,7 @@ ServerEvents.recipes(event => {
 	// Compote
 	event.recipes.gtceu.food_processor('compote')
 		.circuit(2)
-		.itemInputs('#tfc:foods/fruits', '#tfc:foods/fruits', 'minecraft:sugar')
+		.itemInputs('#tfc:foods/fruits', '#tfc:foods/fruits')
 		.inputFluids(Fluid.of('minecraft:water', 1000))
 		.outputFluids(Fluid.of('tfc_gurman:compote', 1000))
 		.duration(2000)
@@ -313,7 +313,7 @@ ServerEvents.recipes(event => {
 	// Lemonade
 	event.recipes.gtceu.food_processor('lemonade')
 		.circuit(2)
-		.itemInputs('tfc:food/lemon', 'tfc:food/lemon', 'minecraft:sugar')
+		.itemInputs('tfc:food/lemon', 'tfc:food/lemon')
 		.inputFluids(Fluid.of('minecraft:water', 1000))
 		.outputFluids(Fluid.of('tfc_gurman:lemonade', 1000))
 		.duration(1500)
@@ -322,7 +322,7 @@ ServerEvents.recipes(event => {
 	// Kvass
 	event.recipes.gtceu.food_processor('kvass')
 		.circuit(2)
-		.itemInputs('#tfc:foods/bread', 'minecraft:sugar', 'firmalife:food/yeast')
+		.itemInputs('#tfc:cow_food', 'firmalife:cow_food')
 		.inputFluids(Fluid.of('minecraft:water', 1000))
 		.outputFluids(Fluid.of('tfc_gurman:kvass', 1000))
 		.duration(2400)
@@ -368,7 +368,7 @@ ServerEvents.recipes(event => {
 	event.recipes.gtceu.food_processor('solyanka')
 		.circuit(20)
 		.itemInputs('#tfc:foods/meats', 'tfc:food/cabbage', 'tfc:food/onion', 'tfc:food/tomato', 'tfc:food/olive')
-		.itemOutputs('tfc_gurman:solyanka')
+		.itemOutputs('3x tfc_gurman:solyanka')
 		.inputFluids(Fluid.of('minecraft:water', 1000))
 		.duration(1800)
 		.EUt(8)
@@ -382,7 +382,7 @@ ServerEvents.recipes(event => {
 	event.recipes.gtceu.food_processor('okroshka')
 		.circuit(20)
 		.itemInputs('tfc:food/cabbage', 'tfc:food/tomato', 'tfc:food/potato', 'tfc:food/onion', 'minecraft:egg')
-		.itemOutputs('tfc_gurman:okroshka')
+		.itemOutputs('3x tfc_gurman:okroshka')
 		.inputFluids(Fluid.of('tfc_gurman:kvass', 1000))
 		.duration(1800)
 		.EUt(8)
@@ -396,7 +396,7 @@ ServerEvents.recipes(event => {
 	event.recipes.gtceu.food_processor('zama')
 		.circuit(20)
 		.itemInputs('tfc:food/chicken', 'tfc:food/carrot', 'tfc:food/onion', 'tfc:powder/salt', 'tfc:food/garlic')
-		.itemOutputs('tfc_gurman:zama')
+		.itemOutputs('3x tfc_gurman:zama')
 		.inputFluids(Fluid.of('minecraft:water', 1000))
 		.duration(2000)
 		.EUt(8)
@@ -410,7 +410,7 @@ ServerEvents.recipes(event => {
 	event.recipes.gtceu.food_processor('curry')
 		.circuit(16)
 		.itemInputs('#tfc:foods/cooked_meats', '#tfc:foods/vegetables', 'tfc:powder/salt', 'tfc:food/cooked_rice')
-		.itemOutputs('tfc_gurman:curry')
+		.itemOutputs('3x tfc_gurman:curry')
 		.inputFluids('#tfc:milks 1000')
 		.duration(2000)
 		.EUt(8)
@@ -424,7 +424,7 @@ ServerEvents.recipes(event => {
 	event.recipes.gtceu.food_processor('goulash')
 		.circuit(16)
 		.itemInputs('#tfc:foods/raw_meats', 'tfc:food/onion', 'tfc:food/potato', 'tfc:powder/salt')
-		.itemOutputs('tfc_gurman:goulash')
+		.itemOutputs('3x tfc_gurman:goulash')
 		.inputFluids(Fluid.of('minecraft:water', 100))
 		.duration(2000)
 		.EUt(8)
@@ -438,7 +438,7 @@ ServerEvents.recipes(event => {
 	event.recipes.gtceu.food_processor('pho')
 		.circuit(16)
 		.itemInputs('firmalife:food/cooked_pasta', '#tfc:foods/cooked_meats', 'tfc:food/garlic', 'tfc:powder/salt')
-		.itemOutputs('tfc_gurman:pho')
+		.itemOutputs('3x tfc_gurman:pho')
 		.inputFluids(Fluid.of('minecraft:water', 100))
 		.duration(2000)
 		.EUt(8)
@@ -452,7 +452,7 @@ ServerEvents.recipes(event => {
 	event.recipes.gtceu.food_processor('bouillabaisse')
 		.circuit(16)
 		.itemInputs('#firmalife:foods/raw_fish', 'tfc:food/tomato', 'tfc:food/onion', 'tfc:food/garlic', 'tfc:powder/salt')
-		.itemOutputs('tfc_gurman:bouillabaisse')
+		.itemOutputs('3x tfc_gurman:bouillabaisse')
 		.inputFluids(Fluid.of('minecraft:water', 1000))
 		.duration(2000)
 		.EUt(8)
@@ -466,7 +466,7 @@ ServerEvents.recipes(event => {
 	event.recipes.gtceu.food_processor('ramen_beef')
 		.circuit(21)
 		.itemInputs('firmalife:food/raw_egg_noodles', 'minecraft:egg', 'tfc:food/beef', 'tfc:food/onion')
-		.itemOutputs('tfc_gurman:ramen_with_beef')
+		.itemOutputs('2x tfc_gurman:ramen_with_beef')
 		.inputFluids(Fluid.of('minecraft:water', 1000))
 		.duration(2000)
 		.EUt(8)
@@ -480,7 +480,7 @@ ServerEvents.recipes(event => {
 	event.recipes.gtceu.food_processor('ramen_camelidae')
 		.circuit(21)
 		.itemInputs('firmalife:food/raw_egg_noodles', 'minecraft:egg', 'tfc:food/camelidae', 'tfc:food/onion')
-		.itemOutputs('tfc_gurman:ramen_with_camelidae')
+		.itemOutputs('2x tfc_gurman:ramen_with_camelidae')
 		.inputFluids(Fluid.of('minecraft:water', 1000))
 		.duration(2000)
 		.EUt(8)
@@ -494,7 +494,7 @@ ServerEvents.recipes(event => {
 	event.recipes.gtceu.food_processor('ramen_chevon')
 		.circuit(21)
 		.itemInputs('firmalife:food/raw_egg_noodles', 'minecraft:egg', 'tfc:food/chevon', 'tfc:food/onion')
-		.itemOutputs('tfc_gurman:ramen_with_chevon')
+		.itemOutputs('2x tfc_gurman:ramen_with_chevon')
 		.inputFluids(Fluid.of('minecraft:water', 1000))
 		.duration(2000)
 		.EUt(8)
@@ -508,7 +508,7 @@ ServerEvents.recipes(event => {
 	event.recipes.gtceu.food_processor('ramen_bacon')
 		.circuit(21)
 		.itemInputs('firmalife:food/raw_egg_noodles', 'minecraft:egg', 'firmalife:food/bacon', 'tfc:food/onion')
-		.itemOutputs('tfc_gurman:ramen_with_bacon')
+		.itemOutputs('2x tfc_gurman:ramen_with_bacon')
 		.inputFluids(Fluid.of('minecraft:water', 1000))
 		.duration(2000)
 		.EUt(8)
@@ -522,7 +522,7 @@ ServerEvents.recipes(event => {
 	event.recipes.gtceu.food_processor('biryani')
 		.circuit(20)
 		.itemInputs('tfc:food/rice_grain', '#tfc:foods/meats', 'tfc:food/onion', 'tfc:food/carrot', 'tfc:food/tomato')
-		.itemOutputs('tfc_gurman:biryani')
+		.itemOutputs('3x tfc_gurman:biryani')
 		.inputFluids(Fluid.of('minecraft:water', 1000))
 		.duration(2000)
 		.EUt(8)
@@ -536,7 +536,7 @@ ServerEvents.recipes(event => {
 	event.recipes.gtceu.food_processor('fried_rice')
 		.circuit(16)
 		.itemInputs('tfc:food/cooked_rice', '#forge:eggs', '#tfc:foods/vegetables', 'tfc:powder/salt')
-		.itemOutputs('tfc_gurman:fried_rice')
+		.itemOutputs('3x tfc_gurman:fried_rice')
 		.inputFluids(Fluid.of('minecraft:water', 100))
 		.duration(2000)
 		.EUt(8)
@@ -550,7 +550,7 @@ ServerEvents.recipes(event => {
 	event.recipes.gtceu.food_processor('kimchi')
 		.circuit(20)
 		.itemInputs('tfc:food/cabbage', 'tfc:food/carrot', 'tfc:food/onion', 'tfc:food/garlic', 'tfc:powder/salt')
-		.itemOutputs('tfc_gurman:kimchi')
+		.itemOutputs('3x tfc_gurman:kimchi')
 		.inputFluids(Fluid.of('minecraft:water', 1000))
 		.duration(2400)
 		.EUt(8)
@@ -564,7 +564,7 @@ ServerEvents.recipes(event => {
 	event.recipes.gtceu.food_processor('dolma')
 		.circuit(16)
 		.itemInputs('#tfc:foods/meats', 'tfc:food/rice_grain', 'tfc:powder/salt')
-		.itemOutputs('tfc_gurman:dolma')
+		.itemOutputs('2x tfc_gurman:dolma')
 		.inputFluids(Fluid.of('minecraft:water', 1000))
 		.duration(1800)
 		.EUt(8)
@@ -578,7 +578,7 @@ ServerEvents.recipes(event => {
 	event.recipes.gtceu.food_processor('spaghetti_bolognese')
 		.circuit(18)
 		.itemInputs('firmalife:food/cooked_pasta', '#tfc:foods/cooked_meats', 'tfc:food/tomato', 'tfc:food/onion', 'tfc:food/garlic')
-		.itemOutputs('tfc_gurman:spaghetti_bolognese')
+		.itemOutputs('3x tfc_gurman:spaghetti_bolognese')
 		.inputFluids(Fluid.of('minecraft:water', 500))
 		.duration(2000)
 		.EUt(8)
@@ -592,7 +592,7 @@ ServerEvents.recipes(event => {
 	event.recipes.gtceu.food_processor('pasta_carbonara')
 		.circuit(18)
 		.itemInputs('firmalife:food/cooked_pasta', 'firmalife:food/bacon', 'minecraft:egg', 'firmalife:food/shredded_cheese', 'tfc:powder/salt')
-		.itemOutputs('tfc_gurman:pasta_carbonara')
+		.itemOutputs('3x tfc_gurman:pasta_carbonara')
 		.inputFluids(Fluid.of('minecraft:water', 500))
 		.duration(2000)
 		.EUt(8)
@@ -606,7 +606,7 @@ ServerEvents.recipes(event => {
 	event.recipes.gtceu.food_processor('ratatouille')
 		.circuit(18)
 		.itemInputs('tfc:food/tomato', 'tfc:food/pumpkin_chunks', 'tfc:food/carrot', 'tfc:food/onion', 'tfc:food/garlic')
-		.itemOutputs('tfc_gurman:ratatouille')
+		.itemOutputs('3x tfc_gurman:ratatouille')
 		.inputFluids(Fluid.of('minecraft:water', 500))
 		.duration(2000)
 		.EUt(8)
@@ -620,7 +620,7 @@ ServerEvents.recipes(event => {
 	event.recipes.gtceu.food_processor('risotto')
 		.circuit(18)
 		.itemInputs('tfc:food/rice_grain', '#firmalife:foods/cheeses', '#tfc:foods/vegetables')
-		.itemOutputs('tfc_gurman:risotto')
+		.itemOutputs('3x tfc_gurman:risotto')
 		.inputFluids(Fluid.of('minecraft:water', 100))
 		.duration(2000)
 		.EUt(8)
@@ -644,11 +644,98 @@ ServerEvents.recipes(event => {
 		TFC.isp.of('tfc_gurman:pelmeni').copyFood().asCanonClass(), 
 		[])
 
+
+	// Pelmeni (cooking raw pelmeni)
+	event.recipes.gtceu.food_processor('pelmeni')
+		.circuit(18)
+		.itemInputs('tfc_gurman:raw_pelmeni','tfc_gurman:raw_pelmeni')
+		.itemOutputs('2x tfc_gurman:pelmeni')
+		.inputFluids(Fluid.of('minecraft:water', 500))
+		.duration(1000)
+		.EUt(8)
+	
+	$ISPRecipeLogic.RegisterRecipeData('food_processor/pelmeni', 
+		[Ingredient.of('tfc_gurman:raw_pelmeni')], 
+		TFC.isp.of('tfc_gurman:pelmeni').copyFood().asCanonClass(), 
+		[])
+
+
+	// Pelmeni (cooking raw pelmeni)
+	event.recipes.gtceu.food_processor('pelmeni')
+		.circuit(18)
+		.itemInputs('tfc_gurman:raw_pelmeni','tfc_gurman:raw_pelmeni','tfc_gurman:raw_pelmeni')
+		.itemOutputs('x3 tfc_gurman:pelmeni')
+		.inputFluids(Fluid.of('minecraft:water', 500))
+		.duration(1000)
+		.EUt(8)
+	
+	$ISPRecipeLogic.RegisterRecipeData('food_processor/pelmeni', 
+		[Ingredient.of('tfc_gurman:raw_pelmeni')], 
+		TFC.isp.of('tfc_gurman:pelmeni').copyFood().asCanonClass(), 
+		[])
+
+
+	// Pelmeni (cooking raw pelmeni)
+	event.recipes.gtceu.food_processor('pelmeni')
+		.circuit(18)
+		.itemInputs('tfc_gurman:raw_pelmeni','tfc_gurman:raw_pelmeni','tfc_gurman:raw_pelmeni','tfc_gurman:raw_pelmeni')
+		.itemOutputs('x4 tfc_gurman:pelmeni')
+		.inputFluids(Fluid.of('minecraft:water', 500))
+		.duration(1000)
+		.EUt(8)
+	
+	$ISPRecipeLogic.RegisterRecipeData('food_processor/pelmeni', 
+		[Ingredient.of('tfc_gurman:raw_pelmeni')], 
+		TFC.isp.of('tfc_gurman:pelmeni').copyFood().asCanonClass(), 
+		[])
+
 	// Vareniki (cooking raw vareniki)
 	event.recipes.gtceu.food_processor('vareniki')
 		.circuit(18)
 		.itemInputs('tfc_gurman:raw_vareniki')
 		.itemOutputs('tfc_gurman:vareniki')
+		.inputFluids(Fluid.of('minecraft:water', 500))
+		.duration(1000)
+		.EUt(8)
+	
+	$ISPRecipeLogic.RegisterRecipeData('food_processor/vareniki', 
+		[Ingredient.of('tfc_gurman:raw_vareniki')], 
+		TFC.isp.of('tfc_gurman:vareniki').copyFood().asCanonClass(), 
+		[])
+
+	// Vareniki (cooking raw vareniki)
+	event.recipes.gtceu.food_processor('vareniki')
+		.circuit(18)
+		.itemInputs('tfc_gurman:raw_vareniki','tfc_gurman:raw_vareniki')
+		.itemOutputs('2x tfc_gurman:vareniki')
+		.inputFluids(Fluid.of('minecraft:water', 500))
+		.duration(1000)
+		.EUt(8)
+	
+	$ISPRecipeLogic.RegisterRecipeData('food_processor/vareniki', 
+		[Ingredient.of('tfc_gurman:raw_vareniki')], 
+		TFC.isp.of('tfc_gurman:vareniki').copyFood().asCanonClass(), 
+		[])
+
+	// Vareniki (cooking raw vareniki)
+	event.recipes.gtceu.food_processor('vareniki')
+		.circuit(18)
+		.itemInputs('tfc_gurman:raw_vareniki','tfc_gurman:raw_vareniki','tfc_gurman:raw_vareniki')
+		.itemOutputs('3x tfc_gurman:vareniki')
+		.inputFluids(Fluid.of('minecraft:water', 500))
+		.duration(1000)
+		.EUt(8)
+	
+	$ISPRecipeLogic.RegisterRecipeData('food_processor/vareniki', 
+		[Ingredient.of('tfc_gurman:raw_vareniki')], 
+		TFC.isp.of('tfc_gurman:vareniki').copyFood().asCanonClass(), 
+		[])
+
+	// Vareniki (cooking raw vareniki)
+	event.recipes.gtceu.food_processor('vareniki')
+		.circuit(18)
+		.itemInputs('tfc_gurman:raw_vareniki','tfc_gurman:raw_vareniki','tfc_gurman:raw_vareniki','tfc_gurman:raw_vareniki')
+		.itemOutputs('4x tfc_gurman:vareniki')
 		.inputFluids(Fluid.of('minecraft:water', 500))
 		.duration(1000)
 		.EUt(8)
@@ -686,11 +773,52 @@ ServerEvents.recipes(event => {
 		TFC.isp.of('tfc_gurman:mamaliga').copyFood().asCanonClass(), 
 		[])
 
+
+	// Mamaliga
+	event.recipes.gtceu.food_processor('mamaliga')
+		.circuit(16)
+		.itemInputs('tfc:food/maize_grain','tfc:food/maize_grain', 'tfc:powder/salt')
+		.itemOutputs('2x tfc_gurman:mamaliga')
+		.inputFluids(Fluid.of('minecraft:water', 250))
+		.duration(2000)
+		.EUt(8)
+	
+	$ISPRecipeLogic.RegisterRecipeData('food_processor/mamaliga', 
+		[Ingredient.of('tfc:food/maize_grain'), Ingredient.of('tfc:powder/salt')], 
+		TFC.isp.of('tfc_gurman:mamaliga').copyFood().asCanonClass(), 
+		[])
+	// Mamaliga
+	event.recipes.gtceu.food_processor('mamaliga')
+		.circuit(16)
+		.itemInputs('tfc:food/maize_grain','tfc:food/maize_grain','tfc:food/maize_grain', 'tfc:powder/salt')
+		.itemOutputs('3x tfc_gurman:mamaliga')
+		.inputFluids(Fluid.of('minecraft:water', 250))
+		.duration(2000)
+		.EUt(8)
+	
+	$ISPRecipeLogic.RegisterRecipeData('food_processor/mamaliga', 
+		[Ingredient.of('tfc:food/maize_grain'), Ingredient.of('tfc:powder/salt')], 
+		TFC.isp.of('tfc_gurman:mamaliga').copyFood().asCanonClass(), 
+		[])
+	// Mamaliga
+	event.recipes.gtceu.food_processor('mamaliga')
+		.circuit(16)
+		.itemInputs('tfc:food/maize_grain','tfc:food/maize_grain','tfc:food/maize_grain','tfc:food/maize_grain', 'tfc:powder/salt')
+		.itemOutputs('4x tfc_gurman:mamaliga')
+		.inputFluids(Fluid.of('minecraft:water', 250))
+		.duration(2000)
+		.EUt(8)
+	
+	$ISPRecipeLogic.RegisterRecipeData('food_processor/mamaliga', 
+		[Ingredient.of('tfc:food/maize_grain'), Ingredient.of('tfc:powder/salt')], 
+		TFC.isp.of('tfc_gurman:mamaliga').copyFood().asCanonClass(), 
+		[])
+
 	// Adjika
 	event.recipes.gtceu.food_processor('adjika')
 		.circuit(8)
 		.itemInputs('tfc:food/green_bell_pepper', 'tfc:food/red_bell_pepper', 'tfc:powder/salt', 'tfc:food/garlic', 'firmalife:plant/cilantro')
-		.itemOutputs('tfc_gurman:adjika')
+		.itemOutputs('5x tfc_gurman:adjika')
 		.inputFluids(Fluid.of('minecraft:water', 500))
 		.duration(2000)
 		.EUt(8)
